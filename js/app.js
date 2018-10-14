@@ -1,7 +1,7 @@
 const addPlayer = function(name, club, position, rating) {
   // create wrapper div
   const wrapper = document.createElement('div');
-  // create elements for name, club, position
+  // create elements for name, club, position, rating
   const nameElement = document.createElement('h3');
   nameElement.textContent = name;
   const clubElement = document.createElement('p');
@@ -19,7 +19,8 @@ const addPlayer = function(name, club, position, rating) {
   wrapper.appendChild(positionElement);
   wrapper.appendChild(ratingElement);
   // wrapper.appendChild(imageElement);
-  // append the wrapper div to the reading list
+
+  // append the wrapper div to the players list
   const playerList = document.querySelector('#players');
   playerList.appendChild(wrapper);
 };
