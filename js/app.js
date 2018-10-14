@@ -10,11 +10,15 @@ const addPlayer = function(name, club, position, rating) {
   positionElement.textContent = position;
   const ratingElement = document.createElement('p');
   ratingElement.textContent = rating;
+  // const imageElement = document.createElement('p');
+  // imageElement.textContent = image;
+
   // append each element to the wrapper
   wrapper.appendChild(nameElement);
   wrapper.appendChild(clubElement);
   wrapper.appendChild(positionElement);
   wrapper.appendChild(ratingElement);
+  // wrapper.appendChild(imageElement);
   // append the wrapper div to the reading list
   const playerList = document.querySelector('#players');
   playerList.appendChild(wrapper);
@@ -27,6 +31,7 @@ const handleFormSubmit = function(event) {
   const club = event.target.club.value;
   const position = event.target.position.value;
   const rating = event.target.rating.value;
+  // const image = event.target.image.value;
 
 addPlayer(name, club, position, rating);
 

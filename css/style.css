@@ -1,0 +1,35 @@
+@font-face {
+font-family: "EASPORTS";
+src: url("fonts/EASPORTS.ttf");
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: url("./images/background.jpg");
+}
+
+h1, h2, h3 {
+  font-family: "EASPORTS";
+}
+
+#form-wrapper{
+
+}
+
+.form-item{
+  flex:1;
+}
+
+#players div {
+  border: 1px solid #cc0000;
+  padding: 10px;
+  box-shadow: 4px 4px 2px lightgrey;
+  margin: 20px;
+}
+
+#players{
+  display:flex;
+  flex-basis: 30%;
+  flex-grow:1;
+  /* justify-content: space-between; */
+}
