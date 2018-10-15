@@ -57,32 +57,18 @@ h1, h2, h3 {
     border-radius: 3%;
     padding: 5px 5px;
     color: #d1d1d1;
-    background-color: black;
+    background-color: green;
     cursor:pointer;
   }
 
 .buttons:hover{
-  background-color: green;
+  background-color: darkgreen;
 }
 
+
+#delete-all {
+  background-color: #a31515;
+}
 #delete-all:hover{
-  background-color:#a31515;
-}
-
-  .btn--delete {
-    background-color: #d10e1e;
-    border-radius: 2%;
-  }
-
-  .btn--delete:hover {
-    background-color: #a31515;
-  }
-
-  .btn--action {
-    color: #d1d1d1;
-  }
-
-  .btn--action:hover {
-    background-color: #4f5051;
-  }
+  background-color: darkred;
 }

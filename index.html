@@ -1,54 +1,60 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>FIFA</title>
-    <script src="js/app.js"></script>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <h1 id="heading">FIFA PLAYERS</h1>
+<head>
+  <meta charset="utf-8">
+  <title>FIFA</title>
+  <script src="js/app.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1 id="heading">FIFA PLAYERS</h1>
 
-    <form id="new-player">
-      <div id="form-wrapper">
-        <div class="form-item">
-          <label for="name" >Name</label>
-          <input type="text" id="name" required/>
+  <form id="new-player">
+    <div id="form-wrapper">
+      <div class="form-item">
+        <label for="name" >Name: </label>
+        <input type="text" id="name" required/>
+      </div>
+
+      <div class="form-item">
+        <label for="club" >Club: </label>
+        <input type="text" id="club" required/>
+      </div>
+
+      <div class="form-item">
+        <label for="position" id="position">Position: </label> </br>
+
+          <input type="radio" id="goalkeeper" value="goalkeeper" name="position"/>
+          <label for="goalkeeper">Goalkeeper</label> </br>
+
+          <input type="radio" id="defender" value="defender" name="position"/>
+          <label for="defender">Defender</label> </br>
+
+          <input type="radio" id="midfielder" value="midfielder" name="position"/>
+          <label for="midfielder">Midfielder</label> </br>
+
+          <input type="radio" id="attacker" value="attacker" name="position"/>
+          <label for="attacker">Attacker</label> </br>
         </div>
 
         <div class="form-item">
-          <label for="club" >Club</label>
-          <input type="text" id="club" required/>
-        </div>
-
-        <div class="form-item">
-          <label for="position" >Position</label>
-          <select id="position" required>
-            <option value="" disabled selected></option>
-            <option value="GK">Goalkeeper</option>
-            <option value="Defender">Defender</option>
-            <option value="Midfielder">Midfielder</option>
-            <option value="Attacker">Attacker</option>
-          </select>
-        </div>
-
-        <div class="form-item">
-          <label for="rating" >Rating</label>
+          <label for="rating" >Rating: </label>
           <input type="number" id="rating" min="1" max="10" required/>
         </div>
 
         <!-- <div class="form-item">
-          <label for ="image" >Image</label>
-          <input type="file" id="image"/>
-        </div> -->
+        <label for ="image" >Image</label>
+        <input type="file" id="image"/>
+      </div> -->
 
-      </div>
-      <input type="submit" class="buttons"value="Save"/>
-    </form>
+    </div>
+    <input type="submit" class="buttons"value="Save"/>
+  </form> </br>
 
-    <h2 id="players-heading">Players</h2>
-    <div id="players"></div>
-      <input type="submit" id="delete-all" class="buttons" value="Delete"/>
+<input type="submit" id="delete-all" class="buttons" value="Delete All"/>
 
-  </body>
+  <h2 id="players-heading">Players</h2>
+  <div id="players"></div>
+
+</body>
 </html>

@@ -5,13 +5,15 @@ const addPlayer = function(name, club, position, rating) {
   const nameElement = document.createElement('h3');
   nameElement.textContent = name;
   const clubElement = document.createElement('p');
-  clubElement.textContent = club;
+  clubElement.textContent = `Club: ${club}`;
   const positionElement = document.createElement('p');
-  positionElement.textContent = position;
+  positionElement.textContent = `Position: ${position}`;
   const ratingElement = document.createElement('p');
-  ratingElement.textContent = rating;
-  // const imageElement = document.createElement('p');
-  // imageElement.textContent = image;
+  ratingElement.textContent = `Rating: ${rating}`;
+  // const imageElement = document.createElement('img');
+  // img.src = "/filepath";
+  // img.alt = "alt tag";
+  // img.id = "id";
 
   // append each element to the wrapper
   wrapper.appendChild(nameElement);
@@ -54,4 +56,4 @@ form.addEventListener('submit', handleFormSubmit);
 
 const deleteButton = document.querySelector('#delete-all');
 deleteButton.addEventListener('click', handleDeleteButtonClicked);
-})
+});
